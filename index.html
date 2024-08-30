@@ -215,37 +215,57 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+
+        <!-- Figure 2: Vision Transformer Architecture -->
+        <div class="item">
+          <img src="static/images/vita_algorithm.png" alt="Vision Transformer Architecture Overview"/>
+          <h2 class="subtitle has-text-centered">
+            <strong>VITA Algorithm Architecture:</strong> The figure provides an overview of the proposed vision transformer architecture, which balances global and local feature extraction using a dual-stream structure to optimize HMR tasks.
+          </h2>
+        </div>
+
+        <!-- Figure 3: Average Pooling Block (APB) -->
+        <div class="item">
+          <img src="static/images/vita_PAB.png" alt="Average Pooling Block Overview"/>
+          <h2 class="subtitle has-text-centered">
+            <strong> Featured Average Pooling Block (APB) in VITA:</strong> The figure illustrates the APB in VITA, designed to efficiently capture cross-channel spatial correlations while optimizing memory access for HMR tasks.
+          </h2>
+        </div>
+
+        <!-- Figure 5: Overall VITA Accelerator Architecture -->
+        <div class="item">
+          <img src="static/images/vita_arch.png" alt="VITA Accelerator Architecture"/>
+          <h2 class="subtitle has-text-centered">
+            <strong>VITA Accelerator Architecture:</strong> The figure shows the overall architecture of the VITA accelerator, which supports a variety of operations in the ViT algorithm, including pooling, normalization, and convolution.
+          </h2>
+        </div>
+
+        <!-- Figure 6: Configurable MAC Design -->
+        <div class="item">
+          <img src="static/images/vita_mac.png" alt="Configurable MAC Design"/>
+          <h2 class="subtitle has-text-centered">
+            <strong>Configurable MAC Design:</strong> The figure depicts the MAC configurations within the VITA architecture, enabling various operations like patch-wise pooling, position-wise pooling, matrix multiplication, and depth-wise convolution.
+          </h2>
+        </div>
+
+        <!-- Table 2: Performance Task -->
+        <div class="item">
+          <img src="static/images/vita_accuracy.png" alt="Performance Task Table"/>
+          <h2 class="subtitle has-text-centered">
+            <strong>Performance Task:</strong> The table summarizes the performance comparison of VITA with other models in image classification tasks, showing superior accuracy while maintaining similar model size and MAC operations. Modles are trained on the training set and the reported top-1 accuracy is evaluated on the validation set.
+          </h2>
+        </div>
+
+        <!-- Figure 8: Performance Comparison for HMR Task -->
+        <div class="item">
+          <img src="static/images/vita_speedup.png" alt="Performance Comparison for HMR Task"/>
+          <h2 class="subtitle has-text-centered">
+            <strong>Performance Comparison:</strong> The figure compares the performance of VITA against multiple platforms, highlighting significant speedups in HMR tasks, especially when evaluated on CPUs and GPUs.
+          </h2>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
