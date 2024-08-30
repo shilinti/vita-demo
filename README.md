@@ -1,48 +1,34 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# Project Web Repo for: VITA: ViT Acceleration for Efficient 3D Human Mesh Recovery
 
+Welcome to the official project webpage projectfor VITA, a hardware-algorithm co-design framework aimed at accelerating Vision Transformer (ViT)-based 3D Human Mesh Recovery (HMR). This project showcases our approach to enhancing the performance and energy efficiency of ViT models, particularly for applications in augmented and virtual reality (AR/VR).
 
-Example project pages built using this template are:
-- https://vision.huji.ac.il/spectral_detuning/
-- https://vision.huji.ac.il/podd/
-- https://dreamix-video-editing.github.io
-- https://vision.huji.ac.il/conffusion/
-- https://vision.huji.ac.il/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad/
-- https://vision.huji.ac.il/deepsim/
+## Project Overview
 
+**VITA** (ViT Acceleration) is designed to overcome the challenges of computational complexity, substantial memory footprint, and data locality issues in ViT-based HMR tasks. The key contributions of this project include:
 
+- **Algorithm Design**: Introduction of an Average Pooling Block (APB) that replaces conventional multi-head attention in ViTs, optimized for improved data locality and reduced computational overhead.
+- **Hardware Architecture**: Development of a custom accelerator that supports various dataflows and computations necessary for pooling, normalization, and convolution operations in ViT models.
 
-## Start using the template
-To start using the template click on `Use this Template`.
+Our results demonstrate significant speedups over state-of-the-art GPUs and CPUs, making VITA a promising solution for real-time 3D HMR in resource-constrained environments.
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+## Project Website
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+This project website is built using the **Academic Project Page Template**, which offers a customizable and user-friendly structure for presenting academic projects.
 
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
+## Features
 
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://pages.cs.huji.ac.il/eliahu-horwitz/](https://pages.cs.huji.ac.il/eliahu-horwitz/)
+- **5.05× to 69.12× speedup** on average over existing hardware platforms for HMR tasks.
+- **Hardware-algorithm co-design** to ensure both efficient computation and memory usage.
+- **Custom ViT architecture** tailored for the unique demands of 3D HMR.
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+## Publications
+
+For more details, please refer to our [paper](https://www.crcv.ucf.edu/chenchen/2024_DAC_VITA_Final.pdf) published in the 61st ACM/IEEE Design Automation Conference (DAC '24).
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
 
 ## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+The website template is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
